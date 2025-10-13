@@ -1,0 +1,23 @@
+/* 아이디 찾기 페이지 전용 스타일 */
+.found-id {
+  background: var(--background-white);
+  padding: 20px;
+  border-radius: var(--border-radius-small);
+  margin-bottom: 25px;
+  border: 1px solid var(--border-color);
+}
+
+.found-id .label {
+  display: block;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.found-id .value {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
