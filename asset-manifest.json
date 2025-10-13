@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/exile175r/idea-funding.git/static/css/main.fa092613.css",
-    "main.js": "/exile175r/idea-funding.git/static/js/main.d853fc69.js",
-    "index.html": "/exile175r/idea-funding.git/index.html",
-    "main.fa092613.css.map": "/exile175r/idea-funding.git/static/css/main.fa092613.css.map",
-    "main.d853fc69.js.map": "/exile175r/idea-funding.git/static/js/main.d853fc69.js.map"
+    "main.css": "/idea-funding/static/css/main.fa092613.css",
+    "main.js": "/idea-funding/static/js/main.c91bd3ad.js",
+    "index.html": "/idea-funding/index.html",
+    "main.fa092613.css.map": "/idea-funding/static/css/main.fa092613.css.map",
+    "main.c91bd3ad.js.map": "/idea-funding/static/js/main.c91bd3ad.js.map"
   },
   "entrypoints": [
     "static/css/main.fa092613.css",
-    "static/js/main.d853fc69.js"
+    "static/js/main.c91bd3ad.js"
   ]
 }
