@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/exile175r/idea-funding.git/static/css/main.fa092613.css",
+    "main.js": "/exile175r/idea-funding.git/static/js/main.d853fc69.js",
+    "index.html": "/exile175r/idea-funding.git/index.html",
+    "main.fa092613.css.map": "/exile175r/idea-funding.git/static/css/main.fa092613.css.map",
+    "main.d853fc69.js.map": "/exile175r/idea-funding.git/static/js/main.d853fc69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa092613.css",
+    "static/js/main.d853fc69.js"
+  ]
+}
