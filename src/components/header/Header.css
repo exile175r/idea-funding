@@ -54,10 +54,11 @@
 }
 
 .nav-link {
+  padding: 10px 15px;
   text-decoration: none;
   color: #333;
+  font-size: 1em;
   font-weight: 500;
-  padding: 10px 15px;
   transition: color 0.2s;
 }
 
