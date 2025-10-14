@@ -15,7 +15,7 @@ import FindId from './components/auth/FindId';
 import FindPassword from './components/auth/FindPassword';
 import Community from './components/community/Community';
 
-const Router = process.env.NODE_ENV === 'production' ? HashRouter : BrowserRouter;
+const Router = BrowserRouter;
 
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(false);
