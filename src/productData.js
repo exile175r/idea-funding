@@ -817,6 +817,311 @@ const product = [
     },
     "reviews": []
   },
+  {
+    "id": "010",
+    "name": "트래버스 AI 스마트 백팩",
+    "category": "여행·아웃도어",
+    "tags": ["스마트백팩", "여행", "도난방지", "IoT", "GPS"],
+    "image_url": "/images/products/010/",
+    "image_name": ["1.png", "2.png", "3.png", "4.png", "5.png"],
+    "description": "실시간 GPS 추적과 원격 잠금 기능으로 당신의 소지품을 안전하게 지키는 AI 스마트 백팩",
+    "creator": {
+      "name": "어반노마드 기어",
+      "profile": "도시 여행자를 위한 스마트하고 안전한 여행 솔루션을 만듭니다."
+    },
+    "funding": {
+      "goal": 9000000,
+      "current": 7380000,
+      "percent": 82,
+      "backers": 315,
+      "daysLeft": 9,
+      "startDate": "2025-09-20",
+      "endDate": "2025-10-22"
+    },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "슈퍼 얼리버드 트래블러",
+        "price": 129000,
+        "description": "트래버스 AI 스마트 백팩 1개 + 전용 보조배터리",
+        "delivery": "2025-11-15",
+        "limit": 200,
+        "sold": 185
+      },
+      {
+        "id": 2,
+        "name": "프로 트래블러 세트",
+        "price": 159000,
+        "description": "트래버스 AI 스마트 백팩 1개 + 전용 보조배터리 + RFID 차단 파우치",
+        "delivery": "2025-11-20",
+        "limit": 100,
+        "sold": 67
+      }
+    ],
+    "story": {
+      "title": "여행의 모든 순간, 안심을 더하다",
+      "content": "여행 중 소지품 분실이나 도난에 대한 걱정은 이제 그만. 트래버스 AI 스마트 백팩은 실시간 위치 추적, 원격 잠금, 접근 경고 알림 기능으로 당신의 여행을 더욱 안전하고 자유롭게 만들어줍니다.",
+      "features": [
+        "실시간 GPS 위치 추적",
+        "스마트폰 연동 원격 잠금장치",
+        "내장형 보조배터리 및 USB 포트",
+        "RFID 스키밍 방지 포켓"
+      ],
+      "inner": {
+        "overview": [
+          "트래버스 AI 스마트 백팩은 최신 IoT 기술과 여행의 본질을 결합하여 탄생한 차세대 여행 가방입니다.",
+          "단순한 수납공간을 넘어, 실시간 추적과 원격 잠금 기능으로 소중한 물건을 안전하게 보호하고, 내장된 충전 시스템으로 언제 어디서든 스마트 기기를 충전할 수 있습니다."
+        ],
+        "keyFeatures": [
+          "실시간 GPS 추적 : 내장된 GPS 모듈로 가방의 위치를 언제 어디서든 확인",
+          "원격 잠금 기능 : 스마트폰 앱으로 간편하게 가방을 잠그거나 해제",
+          "접근 경고 알림 : 가방이 설정된 거리 이상 멀어지면 스마트폰으로 즉시 알림",
+          "내장형 충전 시스템 : USB 포트가 외부에 있어 이동 중에도 편리하게 충전 가능",
+          "인체공학적 디자인 : 무게를 효과적으로 분산시켜 장시간 착용에도 편안함 제공"
+        ],
+        "specifications": [
+          ["항목", "내용"],
+          ["크기", "48cm(H) × 32cm(W) × 18cm(D)"],
+          ["무게", "1.5kg (보조배터리 제외)"],
+          ["재질", "방수 코팅 나일론, 강화 폴리머"],
+          ["용량", "25L"],
+          ["연결 방식", "Bluetooth 5.0 / GPS"],
+          ["전원", "전용 보조배터리 (10,000mAh)"],
+          ["호환 OS", "iOS / Android"],
+          ["방수 등급", "IPX4 생활 방수"]
+        ],
+        "usageScenarios": [
+          ["text", "붐비는 해외 여행지에서도 소매치기 걱정 없이 안전하게"],
+          ["image", "inner1.png"],
+          ["image", "inner2.png"],
+          ["text", "카페나 공항에서 잠시 자리를 비울 때 원격으로 잠그고 안심"],
+          ["text", "이동 중 스마트폰이나 태블릿을 가방에 연결해 바로 충전"],
+          ["image", "inner3.png"],
+          ["image", "inner4.png"],
+          ["text", "출장이나 비즈니스 트립에서 노트북과 중요 서류를 안전하게 보관"]
+        ],
+        "components": [
+          "트래버스 AI 스마트 백팩 본체",
+          "전용 10,000mAh 보조배터리",
+          "USB-C 충전 케이블",
+          "사용 설명서 및 보증서"
+        ]
+      }
+    },
+    "specs": {
+      "material": "방수 나일론, 강화 폴리머, GPS 모듈",
+      "size": "48cm × 32cm × 18cm",
+      "weight": "1.5kg",
+      "color": "메탈릭 그레이, 딥 네이비",
+      "warranty": "2년"
+    },
+    "reviews": [],
+    "image_prompt": "A sleek, metallic gray smart backpack with subtle LED indicators, placed on an airport bench, a person checking their phone nearby, modern and clean aesthetic, photorealistic"
+  },
+  {
+    "id": "011",
+    "name": "비타워치 프로 스마트 워치",
+    "category": "웰빙·헬스케어",
+    "tags": ["스마트워치", "건강관리", "운동추적", "수면분석", "GPS"],
+    "image_url": "/images/products/011/",
+    "image_name": ["1.png", "2.png", "3.png", "4.png", "5.png"],
+    "description": "건강과 피트니스를 위한 올인원 스마트 워치, 24시간 건강 모니터링과 운동 추적 기능",
+    "creator": {
+      "name": "헬스테크 솔루션",
+      "profile": "웨어러블 헬스케어 기술을 선도하는 혁신 기업"
+    },
+    "funding": {
+      "goal": 12000000,
+      "current": 8960000,
+      "percent": 75,
+      "backers": 445,
+      "daysLeft": 16,
+      "startDate": "2025-09-15",
+      "endDate": "2025-10-31"
+    },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "얼리버드 피트니스",
+        "price": 189000,
+        "description": "비타워치 프로 1개 + 스포츠 밴드 2종",
+        "delivery": "2025-11-20",
+        "limit": 300,
+        "sold": 267
+      },
+      {
+        "id": 2,
+        "name": "프리미엄 헬스 세트",
+        "price": 249000,
+        "description": "비타워치 프로 1개 + 스포츠 밴드 3종 + 무선 충전기",
+        "delivery": "2025-11-25",
+        "limit": 200,
+        "sold": 178
+      }
+    ],
+    "story": {
+      "title": "당신의 건강을 24시간 지켜주는 스마트 파트너",
+      "content": "비타워치 프로는 단순한 시간 확인을 넘어, 심박수, 혈중 산소, 수면 패턴까지 실시간으로 모니터링하여 당신의 건강을 종합적으로 관리해주는 스마트 워치입니다. 운동부터 일상까지, 모든 순간을 함께합니다.",
+      "features": [
+        "24시간 심박수 및 혈중 산소 모니터링",
+        "50가지 이상 운동 모드 지원",
+        "GPS 내장 및 수면 품질 분석",
+        "7일 배터리 수명 및 무선 충전"
+      ],
+      "inner": {
+        "overview": [
+          "비타워치 프로는 최신 생체 신호 센서와 AI 기술을 결합하여 개인의 건강 상태를 정확하게 분석하고 관리하는 차세대 스마트 워치입니다.",
+          "운동, 수면, 스트레스까지 모든 건강 지표를 통합적으로 모니터링하여, 사용자에게 맞춤형 건강 관리 솔루션을 제공합니다."
+        ],
+        "keyFeatures": [
+          "정밀 생체 신호 측정: 심박수, 혈중 산소, 혈압, 체온 등 다중 센서로 정확한 건강 데이터 수집",
+          "AI 기반 건강 분석: 수집된 데이터를 AI가 분석하여 건강 상태와 위험 요소를 사전에 감지",
+          "50+ 운동 모드: 러닝, 수영, 사이클링, 요가, 헬스 등 다양한 운동을 정확하게 추적",
+          "GPS 내장: 운동 경로와 속도, 고도 등 상세한 운동 데이터 제공",
+          "스마트 알림: 앉아있는 시간이 길면 알림으로 활동을 권장하고 건강한 생활 습관 형성 도움"
+        ],
+        "specifications": [
+          ["항목", "내용"],
+          ["화면", "1.4인치 AMOLED 터치스크린"],
+          ["크기", "45mm × 45mm × 12mm"],
+          ["무게", "45g"],
+          ["재질", "알루미늄 케이스, 실리콘 밴드"],
+          ["방수", "5ATM (50m 방수)"],
+          ["배터리", "7일 사용 가능"],
+          ["연결", "Bluetooth 5.0, Wi-Fi"],
+          ["호환 OS", "iOS / Android"]
+        ],
+        "usageScenarios": [
+          ["text", "아침 러닝: GPS로 경로를 추적하고 심박수를 모니터링하며 최적의 운동 강도 유지"],
+          ["image", "inner1.png"],
+          ["image", "inner2.png"],
+          ["text", "수영장에서도 방수 기능으로 자유롭게 운동하며 수영 거리와 칼로리 소모량 측정"],
+          ["text", "야간 수면 모니터링: 수면 단계별 분석으로 숙면을 위한 맞춤형 조언 제공"],
+          ["image", "inner3.png"],
+          ["image", "inner4.png"],
+          ["text", "사무실에서도 장시간 앉아있으면 알림으로 스트레칭이나 산책을 권장"]
+        ],
+        "components": [
+          "비타워치 프로 본체",
+          "스포츠 밴드 (S/M/L 사이즈)",
+          "무선 충전 패드",
+          "USB-C 충전 케이블",
+          "사용 설명서 및 보증서"
+        ]
+      }
+    },
+    "specs": {
+      "material": "알루미늄, 실리콘, 강화유리",
+      "size": "45mm × 45mm × 12mm",
+      "weight": "45g",
+      "color": "실버, 스페이스 그레이, 로즈골드",
+      "warranty": "2년"
+    },
+    "reviews": [],
+    "image_prompt": "A sleek silver smartwatch with a vibrant AMOLED display showing health metrics, worn on a wrist during morning jogging, natural outdoor lighting, photorealistic"
+  },
+  {
+    "id": "012",
+    "name": "시큐어홈 AI 보안 시스템",
+    "category": "스마트홈·보안",
+    "tags": ["홈보안", "AI", "CCTV", "스마트홈", "IoT"],
+    "image_url": "/images/products/012/",
+    "image_name": ["1.png", "2.png", "3.png", "4.png", "5.png"],
+    "description": "AI 기반 얼굴 인식과 실시간 모니터링으로 집을 안전하게 지키는 스마트 보안 시스템",
+    "creator": {
+      "name": "시큐어테크",
+      "profile": "AI 기반 스마트 보안 솔루션을 개발하는 전문 기업"
+    },
+    "funding": {
+      "goal": 15000000,
+      "current": 11250000,
+      "percent": 75,
+      "backers": 523,
+      "daysLeft": 22,
+      "startDate": "2025-09-10",
+      "endDate": "2025-11-02"
+    },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "홈 가디언 세트",
+        "price": 299000,
+        "description": "AI 허브 1개 + 실내 카메라 2개 + 도어 센서 4개",
+        "delivery": "2025-12-10",
+        "limit": 200,
+        "sold": 156
+      },
+      {
+        "id": 2,
+        "name": "프리미엄 시큐리티 패키지",
+        "price": 449000,
+        "description": "AI 허브 1개 + 실내/외부 카메라 4개 + 도어센서 6개 + 모션센서 3개",
+        "delivery": "2025-12-15",
+        "limit": 150,
+        "sold": 98
+      }
+    ],
+    "story": {
+      "title": "AI가 지키는 스마트 홈 시큐리티",
+      "content": "시큐어홈 AI 보안 시스템은 최신 AI 기술로 가족의 얼굴을 학습하고, 낯선 사람의 침입을 실시간으로 감지하여 즉시 알림을 보내는 지능형 보안 솔루션입니다. 언제 어디서나 집 안의 상황을 확인하고 안전을 지키세요.",
+      "features": [
+        "AI 얼굴 인식 및 침입자 감지",
+        "실시간 모바일 알림 및 녹화",
+        "음성 명령 및 스마트홈 연동",
+        "야간 투시 및 360도 모니터링"
+      ],
+      "inner": {
+        "overview": [
+          "시큐어홈 AI 보안 시스템은 컴퓨터 비전과 머신러닝 기술을 활용하여 가족과 침입자를 구분하고, 이상 상황을 실시간으로 감지하는 차세대 홈 보안 솔루션입니다.",
+          "단순한 녹화를 넘어, AI가 상황을 분석하고 판단하여 불필요한 알림을 줄이고 진짜 위험 상황에만 즉시 대응할 수 있도록 도와줍니다."
+        ],
+        "keyFeatures": [
+          "AI 얼굴 인식: 가족 구성원의 얼굴을 학습하여 낯선 사람과 구분, 오탐지 최소화",
+          "실시간 침입 감지: 문이나 창문의 비정상적인 개방을 즉시 감지하고 알림",
+          "스마트 알림: 상황의 심각도에 따라 차별화된 알림과 대응 방안 제시",
+          "클라우드 저장: 중요한 영상을 자동으로 클라우드에 백업하여 증거 보존",
+          "스마트홈 연동: 조명, 경보기, 도어락 등과 연동하여 종합적인 보안 환경 구축"
+        ],
+        "specifications": [
+          ["항목", "내용"],
+          ["AI 허브", "4K 해상도, 360도 회전, 야간 투시"],
+          ["카메라", "1080p FHD, 130도 광각, IR LED"],
+          ["센서", "도어/창문 센서, 모션 센서, 온도 센서"],
+          ["연결", "Wi-Fi 6, Bluetooth 5.0, Zigbee"],
+          ["저장", "로컬 128GB + 클라우드 무제한"],
+          ["전원", "AC 어댑터 + 백업 배터리"],
+          ["앱 호환", "iOS / Android"],
+          ["보안", "AES-256 암호화"]
+        ],
+        "usageScenarios": [
+          ["text", "출근 후 집에 혼자 있는 반려동물의 상태를 실시간으로 확인"],
+          ["image", "inner1.png"],
+          ["image", "inner2.png"],
+          ["text", "야간 침입자 감지 시 즉시 알림을 받고 경찰에 신고할 수 있는 증거 영상 확보"],
+          ["text", "가족 구성원이 집에 들어올 때 자동으로 인식하여 불필요한 알림 방지"],
+          ["image", "inner3.png"],
+          ["image", "inner4.png"],
+          ["text", "여행 중에도 스마트폰으로 집 안의 모든 상황을 실시간 모니터링"]
+        ],
+        "components": [
+          "AI 허브 (메인 컨트롤러)",
+          "실내 카메라 2개",
+          "도어/창문 센서 4개",
+          "모션 센서 2개",
+          "설치 키트 및 사용 설명서"
+        ]
+      }
+    },
+    "specs": {
+      "material": "알루미늄, 강화유리, ABS 플라스틱",
+      "size": "120mm × 120mm × 80mm (허브)",
+      "weight": "500g (허브)",
+      "color": "화이트, 블랙",
+      "warranty": "3년"
+    },
+    "reviews": [],
+    "image_prompt": "A modern white AI security hub with multiple cameras mounted on walls, showing a clean living room with family members, soft indoor lighting, photorealistic"
+  }
 ]
 
 export { product, getImagePath };
