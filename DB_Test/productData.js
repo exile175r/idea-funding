@@ -24,6 +24,26 @@ const product = [
       "startDate": "2025-08-15",
       "endDate": "2025-09-30"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "얼리버드 세트",
+        "price": 59000,
+        "description": "루미에어 무드램프 1개 + 전용 리모컨",
+        "delivery": "2025-10-20",
+        "limit": 150,
+        "sold": 97
+      },
+      {
+        "id": 2,
+        "name": "프리미엄 세트",
+        "price": 89000,
+        "description": "루미에어 무드램프 1개 + 전용 리모컨 + 컬러 필터 3종",
+        "delivery": "2025-10-25",
+        "limit": 100,
+        "sold": 88
+      }
+    ],
     "story": {
       "title": "빛으로 감정을 표현하는 새로운 방법",
       "content": "우리는 조명이 단순히 공간을 밝히는 도구가 아니라, 감정을 표현하고 분위기를 만드는 매개체라고 생각했습니다. 루미에어는 사용자의 기분, 날씨, 시간대에 맞춰 자동으로 색과 밝기를 조절하여, 하루의 순간을 특별하게 만들어줍니다.",
@@ -73,7 +93,32 @@ const product = [
           "보증서"
         ]
       }
-    }
+    },
+    "specs": {
+      "material": "알루미늄, 강화유리, LED 모듈",
+      "size": "150mm × 150mm × 250mm",
+      "weight": "850g",
+      "color": "화이트, 블랙, 로즈골드",
+      "warranty": "2년"
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "박**",
+        "rating": 5,
+        "date": "2025-08-28",
+        "content": "밤마다 분위기가 달라져서 너무 좋아요. 앱 연동도 편리합니다.",
+        "verified": true
+      },
+      {
+        "id": 2,
+        "name": "정**",
+        "rating": 4,
+        "date": "2025-08-25",
+        "content": "디자인이 예쁘고 기능도 만족스러운데, 배터리 지속 시간이 조금 더 길었으면 좋겠어요.",
+        "verified": true
+      }
+    ]
   },
   {
     "id": '002',
@@ -96,6 +141,17 @@ const product = [
       "startDate": "2025-09-01",
       "endDate": "2025-09-26"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "커피러버 세트",
+        "price": 45000,
+        "description": "포켓브루 1개 + 전용 머그컵",
+        "delivery": "2025-10-05",
+        "limit": 200,
+        "sold": 120
+      }
+    ],
     "story": {
       "title": "커피를 사랑하는 모든 순간을 위해",
       "content": "캠핑, 여행, 사무실 어디서든 원터치로 커피를 즐길 수 있도록 설계했습니다.",
@@ -138,7 +194,15 @@ const product = [
         ],
         "components": 'components.png'
       }
-    }
+    },
+    "specs": {
+      "material": "스테인리스, ABS 플라스틱",
+      "size": "80mm × 80mm × 200mm",
+      "weight": "500g",
+      "color": "블랙, 실버",
+      "warranty": "1년"
+    },
+    "reviews": []
   },
   {
     "id": '003',
@@ -161,6 +225,17 @@ const product = [
       "startDate": "2025-09-05",
       "endDate": "2025-09-25"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "아로마 세트",
+        "price": 39000,
+        "description": "에어브리즈 본체 + 아로마 캡슐 3종",
+        "delivery": "2025-10-15",
+        "limit": 200,
+        "sold": 88
+      }
+    ],
     "story": {
       "title": "언제 어디서나 맑은 공기를",
       "content": "도심 속에서도 깨끗한 공기를 마실 수 있도록 설계된 휴대용 공기청정기입니다.",
@@ -204,7 +279,16 @@ const product = [
         ],
         "components": 'components.png'
       }
-    }
+    },
+    "specs": {
+      "material": "ABS 플라스틱, 필터",
+      "size": "70mm × 70mm × 150mm",
+      "weight": "300g",
+      "color": "화이트, 민트",
+      "warranty": "1년"
+    },
+    "reviews": [],
+    "image_prompt": "A compact portable air purifier with a sleek white and mint design, placed on a cafe table, soft daylight, realistic photography style"
   },
   {
     "id": '004',
@@ -227,6 +311,17 @@ const product = [
       "startDate": "2025-09-02",
       "endDate": "2025-09-22"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "스탠다드 세트",
+        "price": 79000,
+        "description": "펫케어 자동 급식기 1대",
+        "delivery": "2025-10-10",
+        "limit": 150,
+        "sold": 102
+      }
+    ],
     "story": {
       "title": "혼자 있는 반려동물도 행복하게",
       "content": "외출 중에도 반려동물의 식사를 챙길 수 있는 스마트 급식기입니다.",
@@ -270,7 +365,16 @@ const product = [
         ],
         "components": 'components.png'
       }
-    }
+    },
+    "specs": {
+      "material": "ABS, 스테인리스",
+      "size": "250mm × 250mm × 350mm",
+      "weight": "2.5kg",
+      "color": "화이트, 블랙",
+      "warranty": "1년"
+    },
+    "reviews": [],
+    "image_prompt": "A modern smart pet feeder with a transparent food container and LED display, a happy cat eating from it, modern kitchen background, photorealistic"
   },
   {
     "id": '005',
@@ -293,6 +397,17 @@ const product = [
       "startDate": "2025-09-03",
       "endDate": "2025-09-22"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "허브 스타터 세트",
+        "price": 69000,
+        "description": "에코팟 본체 + 바질·민트·로즈마리 씨앗 세트",
+        "delivery": "2025-10-20",
+        "limit": 150,
+        "sold": 98
+      }
+    ],
     "story": {
       "title": "집 안에서 즐기는 신선한 허브",
       "content": "물 주기, 조명, 온도까지 자동으로 관리해주는 스마트 플랜터입니다.",
@@ -336,7 +451,16 @@ const product = [
         ],
         "components": 'components.png'
       }
-    }
+    },
+    "specs": {
+      "material": "ABS, 강화유리",
+      "size": "200mm × 200mm × 300mm",
+      "weight": "1.2kg",
+      "color": "화이트, 그린",
+      "warranty": "1년"
+    },
+    "reviews": [],
+    "image_prompt": "A modern smart indoor herb planter with LED grow lights, basil and mint growing inside, placed on a kitchen counter, bright natural light, photorealistic"
   },
   {
     "id": '006',
@@ -359,6 +483,17 @@ const product = [
       "startDate": "2025-09-05",
       "endDate": "2025-09-17"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "슬립 스타터 세트",
+        "price": 49000,
+        "description": "슬립웨이브 본체 + 파도·숲·비 소리 모드",
+        "delivery": "2025-10-05",
+        "limit": 200,
+        "sold": 156
+      }
+    ],
     "story": {
       "title": "파도처럼 잔잔한 밤",
       "content": "자연의 소리와 빛으로 깊은 숙면을 유도합니다.",
@@ -407,7 +542,16 @@ const product = [
           "보증서"
         ]
       }
-    }
+    },
+    "specs": {
+      "material": "ABS, LED",
+      "size": "120mm × 120mm × 80mm",
+      "weight": "400g",
+      "color": "화이트, 블루",
+      "warranty": "1년"
+    },
+    "reviews": [],
+    "image_prompt": "A small portable sleep aid device emitting soft blue light, with ocean wave sound icons on display, placed on a bedside table, cozy bedroom background, photorealistic"
   },
   {
     "id": "007",
@@ -430,6 +574,17 @@ const product = [
       "startDate": "2025-09-05",
       "endDate": "2025-09-19"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "트래블 세트",
+        "price": 39000,
+        "description": "아쿠아팟 본체 + 필터 2개",
+        "delivery": "2025-10-10",
+        "limit": 150,
+        "sold": 88
+      }
+    ],
     "story": {
       "title": "깨끗한 물, 어디서든",
       "content": "캠핑, 여행, 등산 어디서든 안전하게 물을 마실 수 있도록 설계된 정수병입니다.",
@@ -478,7 +633,15 @@ const product = [
           "보증서"
         ]
       }
-    }
+    },
+    "specs": {
+      "material": "트라이탄, 활성탄 필터",
+      "size": "70mm × 70mm × 250mm",
+      "weight": "350g",
+      "color": "블루, 그린",
+      "warranty": "1년"
+    },
+    "reviews": []
   },
   {
     "id": "008",
@@ -501,6 +664,17 @@ const product = [
       "startDate": "2025-09-01",
       "endDate": "2025-09-22"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "홈오피스 세트",
+        "price": 159000,
+        "description": "플렉스데스크 1개 + 전용 케이블 정리함",
+        "delivery": "2025-10-25",
+        "limit": 100,
+        "sold": 76
+      }
+    ],
     "story": {
       "title": "작업 환경을 유연하게",
       "content": "높이 조절과 접이식 기능으로 공간 활용도를 극대화한 스마트 책상입니다.",
@@ -548,7 +722,15 @@ const product = [
           "보증서"
         ]
       }
-    }
+    },
+    "specs": {
+      "material": "강화목재, 알루미늄",
+      "size": "1200mm × 600mm × 750mm",
+      "weight": "18kg",
+      "color": "화이트, 월넛",
+      "warranty": "2년"
+    },
+    "reviews": []
   },
   {
     "id": "009",
@@ -571,6 +753,17 @@ const product = [
       "startDate": "2025-09-08",
       "endDate": "2025-09-18"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "서머 세트",
+        "price": 29000,
+        "description": "쿨브리즈 넥팬 1개 + 전용 파우치",
+        "delivery": "2025-09-30",
+        "limit": 200,
+        "sold": 150
+      }
+    ],
     "story": {
       "title": "시원함을 목에 걸다",
       "content": "무더운 여름, 손이 자유로운 휴대용 넥팬으로 시원함을 즐기세요.",
@@ -614,7 +807,15 @@ const product = [
         ],
         "components": 'components.png'
       }
-    }
+    },
+    "specs": {
+      "material": "ABS, 실리콘",
+      "size": "180mm × 180mm × 50mm",
+      "weight": "250g",
+      "color": "화이트, 블랙, 민트",
+      "warranty": "1년"
+    },
+    "reviews": []
   },
   {
     "id": "010",
@@ -637,6 +838,26 @@ const product = [
       "startDate": "2025-09-20",
       "endDate": "2025-10-22"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "슈퍼 얼리버드 트래블러",
+        "price": 129000,
+        "description": "트래버스 AI 스마트 백팩 1개 + 전용 보조배터리",
+        "delivery": "2025-11-15",
+        "limit": 200,
+        "sold": 185
+      },
+      {
+        "id": 2,
+        "name": "프로 트래블러 세트",
+        "price": 159000,
+        "description": "트래버스 AI 스마트 백팩 1개 + 전용 보조배터리 + RFID 차단 파우치",
+        "delivery": "2025-11-20",
+        "limit": 100,
+        "sold": 67
+      }
+    ],
     "story": {
       "title": "여행의 모든 순간, 안심을 더하다",
       "content": "여행 중 소지품 분실이나 도난에 대한 걱정은 이제 그만. 트래버스 AI 스마트 백팩은 실시간 위치 추적, 원격 잠금, 접근 경고 알림 기능으로 당신의 여행을 더욱 안전하고 자유롭게 만들어줍니다.",
@@ -686,7 +907,16 @@ const product = [
           "사용 설명서 및 보증서"
         ]
       }
-    }
+    },
+    "specs": {
+      "material": "방수 나일론, 강화 폴리머, GPS 모듈",
+      "size": "48cm × 32cm × 18cm",
+      "weight": "1.5kg",
+      "color": "메탈릭 그레이, 딥 네이비",
+      "warranty": "2년"
+    },
+    "reviews": [],
+    "image_prompt": "A sleek, metallic gray smart backpack with subtle LED indicators, placed on an airport bench, a person checking their phone nearby, modern and clean aesthetic, photorealistic"
   },
   {
     "id": "011",
@@ -709,6 +939,26 @@ const product = [
       "startDate": "2025-09-15",
       "endDate": "2025-10-31"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "얼리버드 피트니스",
+        "price": 189000,
+        "description": "비타워치 프로 1개 + 스포츠 밴드 2종",
+        "delivery": "2025-11-20",
+        "limit": 300,
+        "sold": 267
+      },
+      {
+        "id": 2,
+        "name": "프리미엄 헬스 세트",
+        "price": 249000,
+        "description": "비타워치 프로 1개 + 스포츠 밴드 3종 + 무선 충전기",
+        "delivery": "2025-11-25",
+        "limit": 200,
+        "sold": 178
+      }
+    ],
     "story": {
       "title": "당신의 건강을 24시간 지켜주는 스마트 파트너",
       "content": "비타워치 프로는 단순한 시간 확인을 넘어, 심박수, 혈중 산소, 수면 패턴까지 실시간으로 모니터링하여 당신의 건강을 종합적으로 관리해주는 스마트 워치입니다. 운동부터 일상까지, 모든 순간을 함께합니다.",
@@ -759,7 +1009,16 @@ const product = [
           "사용 설명서 및 보증서"
         ]
       }
-    }
+    },
+    "specs": {
+      "material": "알루미늄, 실리콘, 강화유리",
+      "size": "45mm × 45mm × 12mm",
+      "weight": "45g",
+      "color": "실버, 스페이스 그레이, 로즈골드",
+      "warranty": "2년"
+    },
+    "reviews": [],
+    "image_prompt": "A sleek silver smartwatch with a vibrant AMOLED display showing health metrics, worn on a wrist during morning jogging, natural outdoor lighting, photorealistic"
   },
   {
     "id": "012",
@@ -782,6 +1041,26 @@ const product = [
       "startDate": "2025-09-10",
       "endDate": "2025-11-02"
     },
+    "rewards": [
+      {
+        "id": 1,
+        "name": "홈 가디언 세트",
+        "price": 299000,
+        "description": "AI 허브 1개 + 실내 카메라 2개 + 도어 센서 4개",
+        "delivery": "2025-12-10",
+        "limit": 200,
+        "sold": 156
+      },
+      {
+        "id": 2,
+        "name": "프리미엄 시큐리티 패키지",
+        "price": 449000,
+        "description": "AI 허브 1개 + 실내/외부 카메라 4개 + 도어센서 6개 + 모션센서 3개",
+        "delivery": "2025-12-15",
+        "limit": 150,
+        "sold": 98
+      }
+    ],
     "story": {
       "title": "AI가 지키는 스마트 홈 시큐리티",
       "content": "시큐어홈 AI 보안 시스템은 최신 AI 기술로 가족의 얼굴을 학습하고, 낯선 사람의 침입을 실시간으로 감지하여 즉시 알림을 보내는 지능형 보안 솔루션입니다. 언제 어디서나 집 안의 상황을 확인하고 안전을 지키세요.",
@@ -832,7 +1111,16 @@ const product = [
           "설치 키트 및 사용 설명서"
         ]
       }
-    }
+    },
+    "specs": {
+      "material": "알루미늄, 강화유리, ABS 플라스틱",
+      "size": "120mm × 120mm × 80mm (허브)",
+      "weight": "500g (허브)",
+      "color": "화이트, 블랙",
+      "warranty": "3년"
+    },
+    "reviews": [],
+    "image_prompt": "A modern white AI security hub with multiple cameras mounted on walls, showing a clean living room with family members, soft indoor lighting, photorealistic"
   }
 ]
 

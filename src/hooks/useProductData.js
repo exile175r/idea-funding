@@ -35,7 +35,7 @@ const useProductData = (data, sectionData) => {
     });
 
     setSections(sectionsData);
-  }, [data]);
+  }, [data, sectionData]);
 
   return sections;
 };

@@ -276,8 +276,7 @@
 }
 
 /* 펀딩 섹션들 */
-.funding-amount-section,
-.funding-rewards-section {
+.funding-amount-section {
   background: white;
   padding: 20px;
   border-radius: 12px;
@@ -370,67 +369,6 @@
   font-size: 16px;
   font-weight: 600;
   color: #495057;
-}
-
-/* 리워드 선택 */
-.rewards-list {
-  display: grid;
-  gap: 15px;
-}
-
-.reward-card {
-  border: 2px solid #e9ecef;
-  border-radius: 8px;
-  padding: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background: #f8f9fa;
-}
-
-.reward-card:hover {
-  border-color: #667eea;
-  background: #f0f2ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
-}
-
-.reward-card.selected {
-  border-color: #667eea;
-  background: #667eea;
-  color: white;
-  transform: scale(1.02);
-}
-
-.reward-amount {
-  font-size: 18px;
-  font-weight: 700;
-  color: #667eea;
-  margin-bottom: 8px;
-}
-
-.reward-card.selected .reward-amount {
-  color: white;
-}
-
-.reward-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.reward-card.selected .reward-title {
-  color: white;
-}
-
-.reward-description {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.4;
-}
-
-.reward-card.selected .reward-description {
-  color: rgba(255, 255, 255, 0.9);
 }
 
 /* 후원 요약 */
