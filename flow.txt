@@ -1,5 +1,0 @@
-Main 파일 연결
-  ProductCard > ProductSection > ProductList > Main
-
-Header 파일 연결
-  CategoryList > Header
