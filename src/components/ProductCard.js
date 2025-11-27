@@ -1,5 +1,6 @@
 import React from 'react';
 import { getImagePath } from '../productData';
+import LazyImage from './common/LazyImage';
 import './ProductCard.css';
 
 const ProductCard = ({ product, onClick }) => {
@@ -15,7 +16,7 @@ const ProductCard = ({ product, onClick }) => {
       onClick={handleClick}
       className="product-card"
     >
-      <img
+      <LazyImage
         src={getImagePath(`${product.image_url}${product.image_name[0]}`)}
         alt={product.name}
         className="product-image"

@@ -129,7 +129,7 @@
 /* 공통 버튼 스타일 */
 .auth-button {
   width: 100%;
-  background: var(--primary-gradient);
+  background: var(--primary-color);
   color: white;
   border: none;
   border-radius: var(--border-radius);
@@ -143,6 +143,12 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.auth-button:hover:not(:disabled) {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
 }
 
 .auth-button:disabled {
@@ -365,7 +371,7 @@
 }
 
 .action-button {
-  background: var(--primary-gradient);
+  background: var(--primary-color);
   color: white;
   text-decoration: none;
   padding: 12px 24px;
@@ -378,6 +384,7 @@
 }
 
 .action-button:hover {
+  background: #5568d3;
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
 }

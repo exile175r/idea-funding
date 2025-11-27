@@ -1,0 +1,149 @@
+/* PostDetail 컴포넌트 스타일 */
+
+.post-detail {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.post-detail-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.post-detail-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.post-detail-category {
+  background: #667eea;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post-detail-type {
+  background: #f8f9fa;
+  color: #666;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post-detail-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin: 15px 0;
+  line-height: 1.4;
+}
+
+.post-detail-info {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.post-detail-author {
+  font-weight: 600;
+  color: #495057;
+}
+
+.post-detail-content {
+  flex: 1;
+  padding: 20px 0;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #555;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.post-detail-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  border-top: 1px solid #f8f9fa;
+  margin-top: auto;
+}
+
+.post-detail-like-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.post-detail-like-button:hover {
+  background: #fff5f5;
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.post-detail-like-button:focus {
+  outline: none;
+}
+
+.post-detail-like-button.liked {
+  background: #fff5f5;
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.post-detail-like-button .like-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  font-family: Arial, sans-serif;
+}
+
+.post-detail-like-button.liked .like-icon {
+  font-size: 30px;
+}
+
+.post-detail-like-button .like-count {
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .post-detail-title {
+    font-size: 22px;
+  }
+
+  .post-detail-content {
+    font-size: 15px;
+  }
+
+  .post-detail-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+

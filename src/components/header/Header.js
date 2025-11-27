@@ -51,6 +51,7 @@ const Header = ({ data, loggedIn, setLoggedIn }) => {
         </div>
         <nav className="nav">
           <ul className="nav-list">
+            <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
             <li className="nav-item category">
               <button type="button" className="category-button">카테고리</button>
               <div className="dropdown">

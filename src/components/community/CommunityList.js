@@ -1,11 +1,8 @@
 import { useState } from 'react';
 
-const CommunityList = ({ filteredData, filterList }) => {
+const CommunityList = ({ filteredData, filterList, onPostClick, onLike, isLiked, getLikeCount }) => {
   const [sortBy, setSortBy] = useState('전체');
   const [currentPage, setCurrentPage] = useState(0);
-  const [postId, setPostId] = useState(null);
-  const [likeList, setLikeList] = useState([]);
-  const [likedPosts, setLikedPosts] = useState(new Set());
 
   const sortOptions = [
     { key: 'all', value: '전체', label: '전체(최신순)' },
@@ -19,34 +16,13 @@ const CommunityList = ({ filteredData, filterList }) => {
     setSortBy(value);
     filteredData(key, value);
     setCurrentPage(0);
-    setPostId(null);
   }
 
-  const handleLikeClick = (itemId) => {
-    const isCurrentlyLiked = likedPosts.has(itemId);
-
-    if (isCurrentlyLiked) {
-      // 좋아요 취소
-      setLikedPosts(prev => {
-        const newSet = new Set(prev);
-        newSet.delete(itemId);
-        return newSet;
-      });
-      setLikeList(prev => prev.filter(item => item.id !== itemId));
-    } else {
-      // 좋아요 추가
-      setLikedPosts(prev => new Set(prev).add(itemId));
-      setLikeList(prev => [...prev, { id: itemId, likes: 1 }]);
+  const handleLikeClick = (e, itemId) => {
+    e.stopPropagation(); // 클릭 이벤트가 부모로 전파되지 않도록
+    if (onLike) {
+      onLike(itemId);
     }
-  };
-
-  const getLikeCount = (item) => {
-    const likedItem = likeList.find(v => v.id === item.id);
-    return likedItem ? item.likes + likedItem.likes : item.likes;
-  };
-
-  const isLiked = (itemId) => {
-    return likedPosts.has(itemId);
   };
 
   return (
@@ -68,25 +44,19 @@ const CommunityList = ({ filteredData, filterList }) => {
         <div className="post-list">
           {filterList.length > 0 && filterList[currentPage] && filterList[currentPage].map((item, index) => (
             <div className='post-item-container' key={index}>
-              <div className={`post-item${postId === item.id ? ' on' : ''}`} onClick={() => setPostId(item.id)}>
+              <div className="post-item" onClick={() => onPostClick && onPostClick(item)}>
                 <div className="post-number">{item.id}</div>
                 <div className="post-category">{item.category}</div>
                 <div className="post-title">{item.title}</div>
                 <div className="post-author">{item.author}</div>
                 <div className="post-date">{item.date}</div>
                 <div className="post-views">{item.views}</div>
-                <div className="post-likes">
-                  <span className="like-icon">♥</span>
-                  <span className="like-count">{getLikeCount(item)}</span>
+                <div className="post-likes" onClick={(e) => handleLikeClick(e, item.id)}>
+                  <span className={`like-icon ${isLiked && isLiked(item.id) ? 'liked' : ''}`}>
+                    {isLiked && isLiked(item.id) ? '♥' : '♡'}
+                  </span>
+                  <span className="like-count">{getLikeCount ? getLikeCount(item) : item.likes}</span>
                 </div>
-              </div>
-              <div className="post-content">
-                <p>{item.content}</p>
-                <button className="like-button"
-                  onClick={() => { handleLikeClick(item.id) }}
-                >
-                  {isLiked(item.id) ? '♥' : '♡'}
-                </button>
               </div>
             </div>
           ))}
@@ -98,7 +68,6 @@ const CommunityList = ({ filteredData, filterList }) => {
           () => {
             if (currentPage > 0) setCurrentPage(currentPage - 1);
             else setCurrentPage(0);
-            setPostId(null);
           }
         }>이전</button>
         <div className="page-numbers">
@@ -108,7 +77,6 @@ const CommunityList = ({ filteredData, filterList }) => {
               key={index}
               onClick={() => {
                 setCurrentPage(index);
-                setPostId(null);
               }}
             >
               {index + 1}
@@ -120,7 +88,6 @@ const CommunityList = ({ filteredData, filterList }) => {
             const len = filterList.length - 1;
             if (currentPage < len) setCurrentPage(currentPage + 1);
             else setCurrentPage(len);
-            setPostId(null);
           }
         }>다음</button>
       </div>

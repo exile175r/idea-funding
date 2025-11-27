@@ -3,6 +3,8 @@ import './Community.css';
 import CommunityList from './CommunityList';
 import WriteForm from './WriteForm';
 import CommunitySearch from './CommunitySearch';
+import PostDetail from './PostDetail';
+import Modal from '../common/Modal';
 import communityData from '../../communityData';
 
 const Community = () => {
@@ -24,23 +26,22 @@ const Community = () => {
     return newList;
   }
 
-  const [currentView, setCurrentView] = useState('list');
   const [filterList, setFilterList] = useState(dataSplit(community));
+  const [isWriteModalOpen, setIsWriteModalOpen] = useState(false);
+  const [selectedPost, setSelectedPost] = useState(null);
+  const [likeList, setLikeList] = useState([]);
+  const [likedPosts, setLikedPosts] = useState(new Set());
 
   const handleWriteButtonClick = () => {
-    setCurrentView(currentView === 'list' ? 'write' : 'list');
-    setFilterList(dataSplit(community.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())));
-  }
-
-  const currentViewChange = (view) => {
-    setCurrentView(view);
-  }
+    setIsWriteModalOpen(true);
+  };
 
   const handleNewPost = (post) => {
     post.id = community.length + 1;
     community.push(post);
     setFilterList(dataSplit(community.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())));
-  }
+    setIsWriteModalOpen(false);
+  };
 
   const handleSearch = (keyword) => {
     const filteredList = community.filter(item =>
@@ -71,23 +72,91 @@ const Community = () => {
     setFilterList(dataSplit(filteredList));
   }
 
+  const handlePostClick = (post) => {
+    setSelectedPost(post);
+  };
+
+  const handleClosePostModal = () => {
+    setSelectedPost(null);
+  };
+
+  const handleLike = (postId) => {
+    const isCurrentlyLiked = likedPosts.has(postId);
+
+    if (isCurrentlyLiked) {
+      setLikedPosts(prev => {
+        const newSet = new Set(prev);
+        newSet.delete(postId);
+        return newSet;
+      });
+      setLikeList(prev => prev.filter(item => item.id !== postId));
+    } else {
+      setLikedPosts(prev => new Set(prev).add(postId));
+      setLikeList(prev => [...prev, { id: postId, likes: 1 }]);
+    }
+  };
+
+  const getLikeCount = (post) => {
+    const likedItem = likeList.find(v => v.id === post.id);
+    return likedItem ? post.likes + likedItem.likes : post.likes;
+  };
+
+  const isLiked = (postId) => {
+    return likedPosts.has(postId);
+  };
+
   return (
     <main className="community-page">
       <div className="community-container">
         <div className="community-header">
           <h1 className="page-title">아이디어 창고</h1>
 
-          {currentView === 'list' && <CommunitySearch handleSearch={handleSearch} />}
+          <CommunitySearch handleSearch={handleSearch} />
 
           <div className="header-actions">
             <button className="write-button" onClick={handleWriteButtonClick}>
-              {currentView === 'list' ? '작성하기' : '목록으로'}
+              작성하기
             </button>
           </div>
         </div>
 
-        {currentView === 'list' && <CommunityList filteredData={filteredData} filterList={filterList} />}
-        {currentView === 'write' && <WriteForm onCurrentViewChange={currentViewChange} setNewPost={handleNewPost} />}
+        <CommunityList 
+          filteredData={filteredData} 
+          filterList={filterList}
+          onPostClick={handlePostClick}
+          onLike={handleLike}
+          isLiked={isLiked}
+          getLikeCount={getLikeCount}
+        />
+
+        {/* 게시글 작성 모달 */}
+        <Modal 
+          isOpen={isWriteModalOpen} 
+          onClose={() => setIsWriteModalOpen(false)}
+          title="게시글 작성"
+        >
+          <WriteForm 
+            onCurrentViewChange={() => setIsWriteModalOpen(false)} 
+            setNewPost={handleNewPost} 
+          />
+        </Modal>
+
+        {/* 게시글 상세 모달 */}
+        {selectedPost && (
+          <Modal 
+            isOpen={!!selectedPost} 
+            onClose={handleClosePostModal}
+            title={selectedPost.title}
+          >
+            <PostDetail 
+              post={selectedPost}
+              onLike={handleLike}
+              isLiked={isLiked(selectedPost.id)}
+              likeCount={getLikeCount(selectedPost)}
+              onClose={handleClosePostModal}
+            />
+          </Modal>
+        )}
       </div>
     </main>
   )

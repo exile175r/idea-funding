@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 export default function Footer() {
@@ -17,7 +18,6 @@ export default function Footer() {
           <div className="footer-section">
             <h4>서비스</h4>
             <ul className="footer-links">
-              <li>프로젝트 둘러보기</li>
               <li>프로젝트 만들기</li>
               <li>성공 사례</li>
               <li>펀딩 가이드</li>
@@ -37,7 +37,6 @@ export default function Footer() {
           <div className="footer-section">
             <h4>회사 정보</h4>
             <ul className="footer-links">
-              <li>회사 소개</li>
               <li>채용 정보</li>
               <li>보도자료</li>
               <li>파트너십</li>

@@ -1,70 +1,158 @@
-# Getting Started with Create React App
+# Idea Funding
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+꿈을 현실로 만드는 크라우드펀딩 플랫폼
 
-## Available Scripts
+## 📋 프로젝트 소개
 
-In the project directory, you can run:
+Idea Funding은 창의적인 아이디어를 가진 창작자와 후원자를 연결하는 크라우드펀딩 플랫폼입니다. 사용자들은 다양한 프로젝트를 탐색하고, 관심 있는 프로젝트에 후원할 수 있으며, 커뮤니티를 통해 아이디어를 공유하고 소통할 수 있습니다.
 
-### `npm start`
+### 🎯 프로젝트 목표
+- 실제 사용 가능한 크라우드펀딩 플랫폼 구현
+- React를 활용한 모던한 웹 애플리케이션 개발
+- 컴포넌트 기반 아키텍처 설계 및 재사용 가능한 코드 작성
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 배포 링크
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**라이브 데모**: [https://exile175r.github.io/idea-funding](https://exile175r.github.io/idea-funding)
 
-### `npm test`
+## 🛠️ 기술 스택
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React** 19.1.1 - 사용자 인터페이스 구축
+- **React Router** 7.9.1 - 클라이언트 사이드 라우팅
+- **Swiper** 12.0.1 - 이미지 슬라이더
+- **CSS3** - 스타일링 및 반응형 디자인
 
-### `npm run build`
+### 개발 도구
+- **Create React App** - 프로젝트 초기 설정
+- **GitHub Pages** - 정적 사이트 배포
+- **ESLint** - 코드 품질 관리
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ 주요 기능
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. 프로젝트 관리
+- 다양한 카테고리별 프로젝트 조회
+- 실시간 검색 및 필터링 기능
+- 프로젝트 상세 정보 확인
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. 후원 시스템
+- 프로젝트 상세 정보 확인
+- 후원 금액 선택 및 직접 입력
+- 후원 진행률 시각화
 
-### `npm run eject`
+### 3. 커뮤니티
+- 아이디어 창고를 통한 사용자 간 소통
+- 아이디어 공유 및 게시글 작성
+- 카테고리별 필터링 및 검색
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. 사용자 인증
+- 로그인 및 회원가입
+- ID/비밀번호 찾기 기능
+- 사용자 세션 관리
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 프로젝트 구조
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+idea-funding/
+├── public/                 # 정적 파일
+│   ├── images/            # 이미지 리소스
+│   ├── videos/            # 비디오 리소스
+│   └── font/              # 폰트 파일
+├── src/
+│   ├── components/        # React 컴포넌트
+│   │   ├── about/         # 프로젝트 소개 페이지
+│   │   ├── auth/          # 인증 관련 컴포넌트
+│   │   ├── community/     # 커뮤니티 컴포넌트
+│   │   ├── footer/        # 푸터 컴포넌트
+│   │   ├── funding/       # 후원 페이지
+│   │   ├── header/        # 헤더 컴포넌트
+│   │   ├── main/          # 메인 페이지
+│   │   └── project/       # 프로젝트 목록 페이지
+│   ├── hooks/             # 커스텀 훅
+│   ├── App.js             # 메인 앱 컴포넌트
+│   ├── index.js           # 진입점
+│   ├── productData.js     # 프로젝트 데이터
+│   └── communityData.js   # 커뮤니티 데이터
+├── package.json
+└── README.md
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 시작하기
 
-## Learn More
+### 사전 요구사항
+- Node.js (v14 이상)
+- npm 또는 yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 설치
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. 저장소 클론
+```bash
+git clone https://github.com/exile175r/idea-funding.git
+cd idea-funding
+```
 
-### Code Splitting
+2. 의존성 설치
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. 개발 서버 실행
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+브라우저에서 [http://localhost:3000](http://localhost:3000)로 접속하여 확인할 수 있습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 빌드
 
-### Making a Progressive Web App
+프로덕션 빌드를 생성하려면:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run build
+```
 
-### Advanced Configuration
+빌드된 파일은 `build` 폴더에 생성됩니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 배포
 
-### Deployment
+GitHub Pages에 배포하려면:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm run deploy
+```
 
-### `npm run build` fails to minify
+## 📝 사용 가능한 스크립트
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `npm start` - 개발 서버 실행
+- `npm run build` - 프로덕션 빌드 생성
+- `npm test` - 테스트 실행
+- `npm run deploy` - GitHub Pages에 배포
+
+## 🎓 배운 점
+
+이 프로젝트를 통해 다음을 학습했습니다:
+
+- React Hooks를 활용한 상태 관리 및 컴포넌트 최적화
+- React Router를 이용한 클라이언트 사이드 라우팅 구현
+- 컴포넌트 기반 아키텍처 설계 및 재사용 가능한 코드 작성
+- 반응형 웹 디자인 및 사용자 경험 개선
+- GitHub Pages를 활용한 정적 사이트 배포
+- 환경별 라우팅 설정 (개발/프로덕션)
+
+## 📅 개발 정보
+
+- **개발 기간**: 2025년
+- **개발 인원**: 1명 (개인 프로젝트)
+- **배포 환경**: GitHub Pages
+
+## 📄 라이선스
+
+이 프로젝트는 개인 포트폴리오 프로젝트입니다.
+
+## 👤 개발자
+
+- GitHub: [@exile175r](https://github.com/exile175r)
+
+---
+
+프로젝트에 대한 질문이나 제안사항이 있으시면 이슈를 등록해주세요!

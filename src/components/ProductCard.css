@@ -13,6 +13,11 @@
   object-fit: cover;
 }
 
+/* LazyImage wrapper 스타일 */
+.product-card .lazy-image-wrapper {
+  height: 300px;
+}
+
 .product-info {
   padding: 20px;
 }

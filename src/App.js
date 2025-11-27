@@ -14,29 +14,35 @@ import Signup from './components/auth/Signup';
 import FindId from './components/auth/FindId';
 import FindPassword from './components/auth/FindPassword';
 import Community from './components/community/Community';
+import About from './components/about/About';
+import ErrorBoundary from './components/common/ErrorBoundary';
 
 // eslint-disable-next-line
 const Router = process.env.NODE_ENV === 'production' ? HashRouter : BrowserRouter;
 
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+  
   return (
-    <Router>
-      <Scroll />
-      <div className="App">
-        <Header data={product} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
-        <Routes>
-          <Route path="/" element={<Main data={product} />} />
-          <Route path="/project" element={<Project data={product} />} />
-          <Route path="/funding/:id" element={<Funding data={product} />} />
-          <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/find-id" element={<FindId />} />
-          <Route path="/find-password" element={<FindPassword />} />
-          <Route path="/idea" element={<Community />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <Scroll />
+        <div className="App">
+          <Header data={product} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+          <Routes>
+            <Route path="/" element={<Main data={product} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/project" element={<Project data={product} />} />
+            <Route path="/funding/:id" element={<Funding data={product} />} />
+            <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/find-id" element={<FindId />} />
+            <Route path="/find-password" element={<FindPassword />} />
+            <Route path="/idea" element={<Community />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </ErrorBoundary>
   );
 }

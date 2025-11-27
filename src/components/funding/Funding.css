@@ -444,8 +444,10 @@
 }
 
 .funding-button:hover:not(:disabled) {
+  background: #5568d3;
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
 .funding-button:disabled {

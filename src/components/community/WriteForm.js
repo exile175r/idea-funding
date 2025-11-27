@@ -128,7 +128,7 @@ const WriteForm = ({ onCurrentViewChange, setNewPost }) => {
         </div>}
 
         <div className="form-actions">
-          <button type="button" className="cancel-button">취소</button>
+          <button type="button" className="cancel-button" onClick={() => onCurrentViewChange('list')}>취소</button>
           <button type="submit" className="submit-button">작성하기</button>
         </div>
       </form>
