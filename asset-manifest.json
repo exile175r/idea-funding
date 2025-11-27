@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/idea-funding/static/css/main.90aed995.css",
-    "main.js": "/idea-funding/static/js/main.e666dd79.js",
+    "main.css": "/idea-funding/static/css/main.8ccff214.css",
+    "main.js": "/idea-funding/static/js/main.62be4b46.js",
     "index.html": "/idea-funding/index.html",
-    "main.90aed995.css.map": "/idea-funding/static/css/main.90aed995.css.map",
-    "main.e666dd79.js.map": "/idea-funding/static/js/main.e666dd79.js.map"
+    "main.8ccff214.css.map": "/idea-funding/static/css/main.8ccff214.css.map",
+    "main.62be4b46.js.map": "/idea-funding/static/js/main.62be4b46.js.map"
   },
   "entrypoints": [
-    "static/css/main.90aed995.css",
-    "static/js/main.e666dd79.js"
+    "static/css/main.8ccff214.css",
+    "static/js/main.62be4b46.js"
   ]
 }
