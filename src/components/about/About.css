@@ -1,4 +1,4 @@
-/* About 페이지 스타일 */
+/* About 페이지 스타일 - 모든 스타일을 .about-page 내부로 스코프 제한 */
 
 .about-page {
   padding: 60px 20px;
@@ -6,13 +6,13 @@
   background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-.about-container {
+.about-page .about-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Hero 섹션 */
-.about-hero {
+.about-page .about-hero {
   text-align: center;
   padding: 80px 20px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -22,27 +22,27 @@
   box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
 }
 
-.about-title {
+.about-page .about-title {
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.about-subtitle {
+.about-page .about-subtitle {
   font-size: 24px;
   margin-bottom: 40px;
   opacity: 0.95;
 }
 
-.about-buttons {
+.about-page .about-buttons {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.btn {
+.about-page .btn {
   padding: 14px 32px;
   border-radius: 8px;
   font-size: 16px;
@@ -54,38 +54,38 @@
   display: inline-block;
 }
 
-.btn-primary {
+.about-page .btn-primary {
   background: white;
   color: #667eea;
 }
 
-.btn-primary:hover {
+.about-page .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
 }
 
-.btn-secondary {
+.about-page .btn-secondary {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
 
-.btn-secondary:hover {
+.about-page .btn-secondary:hover {
   background: white;
   color: #667eea;
 }
 
-.btn-large {
+.about-page .btn-large {
   padding: 18px 40px;
   font-size: 18px;
 }
 
 /* 섹션 공통 스타일 */
-.about-section {
+.about-page .about-section {
   margin-bottom: 80px;
 }
 
-.section-title {
+.about-page .section-title {
   font-size: 36px;
   font-weight: 700;
   color: #333;
@@ -94,7 +94,7 @@
   position: relative;
 }
 
-.section-title::after {
+.about-page .section-title::after {
   content: '';
   position: absolute;
   bottom: -15px;
@@ -106,12 +106,12 @@
   border-radius: 2px;
 }
 
-.section-content {
+.about-page .section-content {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.about-description {
+.about-page .about-description {
   font-size: 18px;
   line-height: 1.8;
   color: #555;
@@ -120,14 +120,14 @@
 }
 
 /* 프로젝트 정보 그리드 */
-.project-info-grid {
+.about-page .project-info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
 
-.info-card {
+.about-page .info-card {
   background: white;
   padding: 30px;
   border-radius: 12px;
@@ -136,37 +136,37 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.info-card:hover {
+.about-page .info-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-.info-icon {
+.about-page .info-icon {
   font-size: 48px;
   margin-bottom: 20px;
 }
 
-.info-card h3 {
+.about-page .info-card h3 {
   font-size: 20px;
   font-weight: 600;
   color: #333;
   margin-bottom: 10px;
 }
 
-.info-card p {
+.about-page .info-card p {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
 }
 
 /* 기술 스택 그리드 */
-.tech-grid {
+.about-page .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
 
-.tech-card {
+.about-page .tech-card {
   background: white;
   padding: 25px;
   border-radius: 12px;
@@ -175,11 +175,11 @@
   transition: transform 0.3s ease;
 }
 
-.tech-card:hover {
+.about-page .tech-card:hover {
   transform: translateX(5px);
 }
 
-.tech-name {
+.about-page .tech-name {
   font-size: 22px;
   font-weight: 700;
   color: #333;
@@ -189,7 +189,7 @@
   gap: 10px;
 }
 
-.tech-version {
+.about-page .tech-version {
   font-size: 14px;
   font-weight: 400;
   color: #667eea;
@@ -198,20 +198,20 @@
   border-radius: 4px;
 }
 
-.tech-description {
+.about-page .tech-description {
   font-size: 15px;
   color: #666;
   line-height: 1.6;
 }
 
 /* 기능 카드 그리드 */
-.features-grid {
+.about-page .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-.feature-card {
+.about-page .feature-card {
   background: white;
   padding: 35px 25px;
   border-radius: 12px;
@@ -220,36 +220,36 @@
   transition: all 0.3s ease;
 }
 
-.feature-card:hover {
+.about-page .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(102, 126, 234, 0.15);
 }
 
-.feature-icon {
+.about-page .feature-icon {
   font-size: 56px;
   margin-bottom: 20px;
 }
 
-.feature-title {
+.about-page .feature-title {
   font-size: 20px;
   font-weight: 600;
   color: #333;
   margin-bottom: 15px;
 }
 
-.feature-description {
+.about-page .feature-description {
   font-size: 15px;
   color: #666;
   line-height: 1.6;
 }
 
 /* 개발 과정 타임라인 */
-.process-timeline {
+.about-page .process-timeline {
   position: relative;
   padding: 40px 0;
 }
 
-.process-timeline::before {
+.about-page .process-timeline::before {
   content: '';
   position: absolute;
   left: 30px;
@@ -259,13 +259,13 @@
   background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
 }
 
-.timeline-item {
+.about-page .timeline-item {
   position: relative;
   padding-left: 80px;
   margin-bottom: 50px;
 }
 
-.timeline-marker {
+.about-page .timeline-marker {
   position: absolute;
   left: 0;
   top: 0;
@@ -282,35 +282,35 @@
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
-.timeline-content {
+.about-page .timeline-content {
   background: white;
   padding: 25px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-.timeline-content h3 {
+.about-page .timeline-content h3 {
   font-size: 22px;
   font-weight: 600;
   color: #333;
   margin-bottom: 10px;
 }
 
-.timeline-content p {
+.about-page .timeline-content p {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
 }
 
 /* 배운 점 리스트 */
-.learned-list {
+.about-page .learned-list {
   list-style: none;
   padding: 0;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.learned-list li {
+.about-page .learned-list li {
   background: white;
   padding: 20px 25px;
   margin-bottom: 15px;
@@ -323,12 +323,12 @@
   transition: transform 0.2s ease;
 }
 
-.learned-list li:hover {
+.about-page .learned-list li:hover {
   transform: translateX(5px);
 }
 
 /* CTA 섹션 */
-.about-cta {
+.about-page .about-cta {
   text-align: center;
   padding: 80px 20px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -337,13 +337,13 @@
   margin-top: 80px;
 }
 
-.about-cta h2 {
+.about-page .about-cta h2 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.about-cta p {
+.about-page .about-cta p {
   font-size: 18px;
   margin-bottom: 40px;
   opacity: 0.95;
@@ -351,47 +351,47 @@
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
-  .about-hero {
+  .about-page .about-hero {
     padding: 60px 20px;
   }
 
-  .about-title {
+  .about-page .about-title {
     font-size: 40px;
   }
 
-  .about-subtitle {
+  .about-page .about-subtitle {
     font-size: 20px;
   }
 
-  .section-title {
+  .about-page .section-title {
     font-size: 28px;
   }
 
-  .about-description {
+  .about-page .about-description {
     font-size: 16px;
   }
 
-  .project-info-grid,
-  .tech-grid,
-  .features-grid {
+  .about-page .project-info-grid,
+  .about-page .tech-grid,
+  .about-page .features-grid {
     grid-template-columns: 1fr;
   }
 
-  .process-timeline::before {
+  .about-page .process-timeline::before {
     left: 20px;
   }
 
-  .timeline-item {
+  .about-page .timeline-item {
     padding-left: 60px;
   }
 
-  .timeline-marker {
+  .about-page .timeline-marker {
     width: 40px;
     height: 40px;
     font-size: 18px;
   }
 
-  .about-cta h2 {
+  .about-page .about-cta h2 {
     font-size: 28px;
   }
 }
