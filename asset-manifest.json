@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/idea-funding/static/css/main.8ccff214.css",
+    "main.css": "/idea-funding/static/css/main.5a20d261.css",
     "main.js": "/idea-funding/static/js/main.62be4b46.js",
     "index.html": "/idea-funding/index.html",
-    "main.8ccff214.css.map": "/idea-funding/static/css/main.8ccff214.css.map",
+    "main.5a20d261.css.map": "/idea-funding/static/css/main.5a20d261.css.map",
     "main.62be4b46.js.map": "/idea-funding/static/js/main.62be4b46.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ccff214.css",
+    "static/css/main.5a20d261.css",
     "static/js/main.62be4b46.js"
   ]
 }
